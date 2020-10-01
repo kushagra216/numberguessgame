@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+#include<string.h>
 class Distance
 {
 	protected:
@@ -28,6 +28,7 @@ class Distance
 			cout<<"FEET : "<<feet<<endl;
 			cout<<"INCHES : "<<inches<<endl;
 		}
+	        ~Distance();                                    //added a destructor to eliminate the clas memory after use
 };
 
 int main()
@@ -35,7 +36,6 @@ int main()
 	Distance d1,d2;
 	d1->feet=10;
 	cout<<d1->feet<<endl;
-	//d2 = d1(20,20);
 	d1(20,20);
 	d1.show();
 	return 0;
