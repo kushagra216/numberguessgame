@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream.h>
 using namespace std;
 #include<string.h>
 class Distance
@@ -28,15 +28,15 @@ class Distance
 			cout<<"FEET : "<<feet<<endl;
 			cout<<"INCHES : "<<inches<<endl;
 		}
-	        ~Distance();                                    //added a destructor to eliminate the clas memory after use
+	        ~Distance();                                    //added a destructor to eliminate the class memory after execution
 };
 
 int main()
 {
-	Distance d1,d2;
-	d1->feet=10;
-	cout<<d1->feet<<endl;
-	d1(20,20);
-	d1.show();
+	Distance d2,d3;
+	d2->feet=10;
+	cout<<d2->feet<<endl;
+	d2(20,20);
+	d2.show();
 	return 0;
 }
